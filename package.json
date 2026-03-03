@@ -1,0 +1,17 @@
+{
+  "name": "cdisc-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Universal agent skills package with npx installer",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:skills": "node packages/skills-build/src/build-index.js",
+    "validate:skills": "node packages/skills-build/src/validate-skills.js",
+    "skills:list": "node packages/skills-cli/bin/skills.js list",
+    "skills:install": "node packages/skills-cli/bin/skills.js install",
+    "skills:validate": "node packages/skills-cli/bin/skills.js validate",
+    "skills:sync": "node packages/skills-cli/bin/skills.js sync"
+  }
+}

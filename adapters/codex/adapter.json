@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": "codex",
+  "displayName": "Codex",
+  "install": {
+    "defaultDir": "~/.agents/skills",
+    "linkStrategy": ["junction", "symlink", "copy"]
+  },
+  "discovery": {
+    "entryType": "directory",
+    "entryPath": "skills/*/SKILL.md"
+  },
+  "bootstrap": {
+    "required": false,
+    "notes": "Compatible with codex skills directory discovery."
+  }
+}

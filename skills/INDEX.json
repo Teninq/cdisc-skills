@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-03-03T06:56:32.446Z",
+  "skills": [
+    {
+      "name": "cdisc",
+      "path": "skills/cdisc",
+      "entry": "skills/cdisc/SKILL.md",
+      "metadata": "skills/cdisc/metadata.json"
+    }
+  ]
+}

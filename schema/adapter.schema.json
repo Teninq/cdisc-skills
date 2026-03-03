@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/adapter.schema.json",
+  "title": "Adapter Config",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "target",
+    "displayName",
+    "install",
+    "discovery"
+  ],
+  "properties": {
+    "schemaVersion": {"type": "string", "minLength": 1},
+    "target": {
+      "type": "string",
+      "enum": ["claude", "cursor", "opencode", "codex", "generic"]
+    },
+    "displayName": {"type": "string", "minLength": 1},
+    "install": {
+      "type": "object",
+      "required": ["defaultDir", "linkStrategy"],
+      "properties": {
+        "defaultDir": {"type": "string", "minLength": 1},
+        "linkStrategy": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["junction", "symlink", "copy"]
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "discovery": {
+      "type": "object",
+      "required": ["entryType", "entryPath"],
+      "properties": {
+        "entryType": {"type": "string", "enum": ["skill-file", "directory", "plugin-file"]},
+        "entryPath": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "bootstrap": {
+      "type": "object",
+      "properties": {
+        "required": {"type": "boolean"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

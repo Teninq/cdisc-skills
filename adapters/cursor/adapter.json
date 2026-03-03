@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": "cursor",
+  "displayName": "Cursor",
+  "install": {
+    "defaultDir": "~/.cursor/skills",
+    "linkStrategy": ["junction", "symlink", "copy"]
+  },
+  "discovery": {
+    "entryType": "directory",
+    "entryPath": "skills/*/SKILL.md"
+  },
+  "bootstrap": {
+    "required": false,
+    "notes": "Adapter preserves compatibility with cursor plugin metadata."
+  }
+}
