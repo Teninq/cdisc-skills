@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": "opencode",
+  "displayName": "OpenCode",
+  "install": {
+    "defaultDir": "~/.config/opencode/skills",
+    "linkStrategy": ["junction", "symlink", "copy"]
+  },
+  "discovery": {
+    "entryType": "plugin-file",
+    "entryPath": ".opencode/plugins/superpowers.js"
+  },
+  "bootstrap": {
+    "required": true,
+    "notes": "Requires bootstrap transform hook compatibility."
+  }
+}

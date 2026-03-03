@@ -1,0 +1,16 @@
+{
+  "name": "superpowers-skills",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "bin": {
+    "superpowers-skills": "bin/skills.js"
+  },
+  "scripts": {
+    "start": "node bin/skills.js",
+    "list": "node bin/skills.js list",
+    "install": "node bin/skills.js install",
+    "validate": "node bin/skills.js validate",
+    "sync": "node bin/skills.js sync"
+  }
+}

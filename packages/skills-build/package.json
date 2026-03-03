@@ -1,0 +1,11 @@
+{
+  "name": "@superpowers/skills-build",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/build-index.js",
+  "scripts": {
+    "build": "node src/build-index.js",
+    "validate": "node src/validate-skills.js"
+  }
+}

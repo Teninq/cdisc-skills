@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": "claude",
+  "displayName": "Claude Code",
+  "install": {
+    "defaultDir": "~/.claude/skills",
+    "linkStrategy": ["junction", "symlink", "copy"]
+  },
+  "discovery": {
+    "entryType": "directory",
+    "entryPath": "skills/*/SKILL.md"
+  },
+  "bootstrap": {
+    "required": false,
+    "notes": "Uses native skills discovery from configured skills directory."
+  }
+}

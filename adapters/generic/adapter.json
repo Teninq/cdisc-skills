@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": "generic",
+  "displayName": "Generic Agent",
+  "install": {
+    "defaultDir": "~/.agent-skills",
+    "linkStrategy": ["copy"]
+  },
+  "discovery": {
+    "entryType": "directory",
+    "entryPath": "skills/*/SKILL.md"
+  },
+  "bootstrap": {
+    "required": false,
+    "notes": "Portable fallback for agent runtimes without native plugin support."
+  }
+}

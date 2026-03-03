@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "name": "cdisc",
+  "version": "1.0.0",
+  "description": "CDISC clinical data standards assistant for SDTM/ADaM/CDASH/CT queries and programming support.",
+  "authors": [
+    "cdisc-skills maintainers"
+  ],
+  "tags": [
+    "cdisc",
+    "clinical-data",
+    "sdtm",
+    "adam",
+    "cdash",
+    "controlled-terminology"
+  ],
+  "entry": "SKILL.md",
+  "references": [
+    "references/programming-guide.md"
+  ],
+  "compatibleTargets": [
+    "claude",
+    "cursor",
+    "opencode",
+    "codex",
+    "generic"
+  ],
+  "minAgentVersion": "0.1.0",
+  "testedAgentVersions": [
+    "claude-code"
+  ]
+}
